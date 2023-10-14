@@ -149,6 +149,14 @@ Matrix* Matrix::set_row(int row, float row_content[]) {
     return this;
 }
 
+void Matrix::fill(float number){
+    for(size_t i = 0; i < rows; i++){
+        for(size_t j = 0; j < columns; j++){
+            matrix_array[i][j] = number;
+        }
+    }
+}
+
 Matrix Matrix::operator+(const Matrix &other) const {
     // Check if matrices have compatible dimensions for addition
     if (rows != other.rows || columns != other.columns) {

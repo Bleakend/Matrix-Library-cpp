@@ -31,6 +31,7 @@ public:
     //need to find a cleaner solution
     Matrix* set_row(int row, int row_content[]);
     Matrix* set_row(int row, float row_content[]);
+    void  fill(float number);
 
     //operator overloading
     Matrix operator+(const Matrix &other) const;

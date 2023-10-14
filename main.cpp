@@ -7,6 +7,9 @@ int  main(){
     std::cout << "Hello world" << std::endl;
     
     Matrix *a = new Matrix(2, 2);
+    a->fill(4);
+    a->PrintMatrix();
+
     a->set_row(0, new int[2]{4, 3})
         ->set_row(1, new int[2]{0, 1});
 
